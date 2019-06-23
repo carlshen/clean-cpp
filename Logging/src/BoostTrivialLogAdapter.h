@@ -9,9 +9,9 @@ public:
 	BoostTrivialLogAdapter();
 	virtual ~BoostTrivialLogAdapter() = default;
 
-	virtual void writeInfoEntry(std::string_view entry) override;
-	virtual void writeWarnEntry(std::string_view entry) override;
-	virtual void writeErrorEntry(std::string_view entry) override;
+	virtual void writeInfoEntry(std::string entry) override;
+	virtual void writeWarnEntry(std::string entry) override;
+	virtual void writeErrorEntry(std::string entry) override;
 };
 
 #endif /* BOOSTTRIVIALLOGADAPTER_H_ */

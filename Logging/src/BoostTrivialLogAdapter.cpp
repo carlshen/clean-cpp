@@ -75,17 +75,17 @@ BoostTrivialLogAdapter::BoostTrivialLogAdapter()
     fsSink->locked_backend()->auto_flush(true);
 }
 
-void BoostTrivialLogAdapter::writeInfoEntry(std::string_view entry)
+void BoostTrivialLogAdapter::writeInfoEntry(std::string entry)
 {
 	BOOST_LOG_TRIVIAL(info) << entry;
 }
 
-void BoostTrivialLogAdapter::writeWarnEntry(std::string_view entry)
+void BoostTrivialLogAdapter::writeWarnEntry(std::string entry)
 {
 	BOOST_LOG_TRIVIAL(warning) << entry;
 }
 
-void BoostTrivialLogAdapter::writeErrorEntry(std::string_view entry)
+void BoostTrivialLogAdapter::writeErrorEntry(std::string entry)
 {
 	BOOST_LOG_TRIVIAL(error) << entry;
 }

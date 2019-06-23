@@ -6,9 +6,9 @@
 class StandardOutputLogger : public LoggingFacility
 {
 public:
-	virtual void writeInfoEntry(std::string_view entry) override;
-	virtual void writeWarnEntry(std::string_view entry) override;
-	virtual void writeErrorEntry(std::string_view entry) override;
+	virtual void writeInfoEntry(std::string entry) override;
+	virtual void writeWarnEntry(std::string entry) override;
+	virtual void writeErrorEntry(std::string entry) override;
 };
 
 #endif /* STANDARDOUTPUTLOGGER_H_ */

@@ -1,5 +1,5 @@
 #include "jsonformatter.h"
-#include <nlohmann/json.hpp>
+#include "nlohmann/json.hpp"
 
 // REF:
 // https://github.com/nlohmann/json

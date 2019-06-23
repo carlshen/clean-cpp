@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <string>
-#include <string_view>
+#include <string>
 #include <sstream>
 
 class Formatter
@@ -11,13 +11,13 @@ class Formatter
 public:
 	virtual ~Formatter() = default;
 
-	Formatter& withCustomerId(std::string_view customerId);
-	Formatter& withForename(std::string_view forename);
-	Formatter& withSurname(std::string_view surname);
-	Formatter& withStreet(std::string_view street);
-	Formatter& withZipCode(std::string_view zipCode);
-	Formatter& withCity(std::string_view city);
-	Formatter& withState(std::string_view state);
+	Formatter& withCustomerId(std::string customerId);
+	Formatter& withForename(std::string forename);
+	Formatter& withSurname(std::string surname);
+	Formatter& withStreet(std::string street);
+	Formatter& withZipCode(std::string zipCode);
+	Formatter& withCity(std::string city);
+	Formatter& withState(std::string state);
 
 	virtual std::string format() const = 0;
 

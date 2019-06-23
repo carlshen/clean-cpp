@@ -16,6 +16,7 @@ public:
 
 	virtual void undo() override {
 		// Blank -- undo should not be undone.
+		std::cout << "UndoCommand undo()" << std::endl;
 	}
 
 private:
